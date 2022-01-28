@@ -43,6 +43,7 @@
           ['mdi-compass', 'Explore', 'explore'],
           ['mdi-chart-donut', 'Progress', 'progress'],
           ['mdi-account', 'Settings', 'settings'],
+          ['mdi-account', 'About', 'about'],
         ],
       };
     },
