@@ -1,19 +1,27 @@
 <template>
-    <v-col
-    >
-        Logout
-    </v-col>
+    <v-row>
+        <v-col align="end">
+            <div>
+                <v-btn
+                @click="toggle">
+                    {{action}}
+                </v-btn>
+            </div>
+        </v-col>
+    </v-row>
 </template>
 <script>
 export default {
     name: 'AppBar',
     data() {
         return {
-
+            action: 'Log In'
         };
     },
-    props: {
-
+    methods: {
+        toggle() {
+            this.action = (this.action === 'Log In') ? 'Log Out' : 'Log In';
+        }
     },
 }
 </script>
