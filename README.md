@@ -21,3 +21,4 @@ yarn serve
 - [ ] Explore Page
 - [ ] Settings Page
 - [ ] About Page
+- [ ] CSS Effects
