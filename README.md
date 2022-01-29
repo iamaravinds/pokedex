@@ -1,5 +1,8 @@
 # pokedex
 
+Pokedex is a database of pokemons and its actions.
+This app is developed using Vuetify.
+
 ## Project setup
 ```
 yarn install
