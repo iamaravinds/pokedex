@@ -17,8 +17,8 @@
 
       <v-list>
         <v-list-item
-          v-for="[icon, text, route ] in links"
-          :key="icon"
+          v-for="([icon, text, route ], index) in links"
+          :key="index"
           link
           @click="jumpTab(route)"
         >
@@ -53,10 +53,14 @@ export default {
     },
     methods: {
         jumpTab(route) {
+          try {
             console.log(route);
-            // if (route) {
+            if (route) {
                 this.$router.push({ path: route })
-            // }
+            }
+          } catch (error) {
+            return
+          }
         }
     }
 }

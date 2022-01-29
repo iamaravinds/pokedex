@@ -2,12 +2,13 @@
   <v-container>
     <v-row>
       <v-col
-        v-for="n in 12"
-        :key="n"
+        v-for="(pokemon, index) in pokemons"
+        :key="index"
         cols="4"
       >
-      <Card/>
-        <!-- <v-card height="200"></v-card> -->
+      <Card
+        :pokemon="pokemon"
+      />
       </v-col>
     </v-row>
   </v-container>
@@ -15,13 +16,14 @@
 
 <script>
   import Card from '@/components/cards/card';
+  import pokemons from '@/services/api-factory'
   export default {
     name: 'Home',
     components: {
       Card,
     },
     data: () => ({
-      
+      pokemons,
     }),
   }
 </script>
