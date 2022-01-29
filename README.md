@@ -1,4 +1,4 @@
-# pokedex
+# Pokedex
 
 Pokedex is a database of pokemons and its actions.
 
